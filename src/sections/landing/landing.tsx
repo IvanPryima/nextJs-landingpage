@@ -78,7 +78,7 @@ export default function Landing() {
         <img
           src="assets/landing/man.png"
           alt="Global Wolves Logo"
-          className="w-[74px] h-20 absolute bottom-[410px] md:right-[220px] right-28"
+          className="w-[74px] h-20 absolute top-[530px] md:right-[220px] right-28"
         />
         <img
           src="assets/landing/Vector35.png"
@@ -99,24 +99,28 @@ export default function Landing() {
         </div>
 
         <div className="absolute top-0 flex flex-wrap w-full h-[940px] mt-[-11px] items-center justify-center ">
-          <div className="max-w-[1300px] mr-8 opacity-10">
-            <h1 className="outline-text text-center sm:text-[90px] font-extrabold text-customBlue-dark border-1 sm:leading-[144px] text-5xl leading-normal">
+          <div className="max-w-[1300px] mr-14 opacity-10">
+            <h1 className="outline-text text-center font-extrabold text-customBlue-dark border-1 leading-[144px] sm:text-[90px] text-6xl">
               TRANSFROM YOUR IDEAS INTO REALITY
             </h1>
-            <h1 className="outline-text text-center sm:text-[90px] font-extrabold text-customBlue-dark border-1 sm:leading-[144px] text-5xl leading-normal">
-              MVP IN JUST 3 WEEKS!
-            </h1>
+            <div className="flex justify-center">
+              <span className="outline-text text-center font-extrabold text-customBlue-dark border-1 leading-[144px] sm:text-[90px] text-6xl px-4">
+                MVP IN JUST 3 WEEKS!
+              </span>
+            </div>
           </div>
         </div>
 
         <div className="absolute top-0 flex flex-wrap w-full h-[940px] mt-[11px] items-center justify-center ">
-          <div className="max-w-[1300px] ml-8">
-            <h1 className="text-center sm:text-[90px] font-extrabold text-[#191919] sm:leading-[144px] text-5xl leading-normal">
+          <div className="max-w-[1300px] ml-14">
+            <h1 className="text-center sm:text-[90px] text-6xl font-extrabold text-[#191919] leading-[144px]">
               TRANSFROM YOUR IDEAS INTO REALITY
             </h1>
-            <h1 className="text-center sm:text-[90px] font-extrabold text-customBlue-dark sm:leading-[144px] text-5xl leading-normal">
-              MVP IN JUST 3 WEEKS!
-            </h1>
+            <div className="flex justify-center">
+              <span className="text-center sm:text-[90px] text-6xl font-extrabold text-customBlue-dark leading-[144px] bg-[#DBEDFF]/20 px-4">
+                MVP IN JUST 3 WEEKS!
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -171,7 +175,7 @@ export default function Landing() {
                 <p className="mt-8 text-[56px] text-[#191919] font-extrabold leading-[76px] mr-[66px]">
                   We Value Your Startup Ideas
                 </p>
-                <p className="max-w-[859px] font-normal leading-10 text-[22px] text-[#454545]">
+                <p className="max-w-[850px] font-normal leading-10 text-[22px] text-[#454545] mr-[66px]">
                   We're here to transform your business idea into reality. Let's
                   bring your vision to life and make the world a better place
                   together.
@@ -199,7 +203,7 @@ export default function Landing() {
           What We Offer
         </p>
 
-        <div className="mt-[60px] flex justify-center">
+        <div className="mt-[60px] flex justify-center relative">
           <div className="grid xl:grid-cols-2 gap-4 grid-cols-1">
             {offerData.map((item, key) => (
               <div
@@ -216,6 +220,10 @@ export default function Landing() {
               </div>
             ))}
           </div>
+
+          <div className="hidden absolute h-full xl:grid place-content-center mr-14">
+            <img src="assets/landing/dotted-line.png" alt=""></img>
+          </div>
         </div>
       </div>
 
@@ -227,7 +235,7 @@ export default function Landing() {
           <div className="float-right w-40 h-[6px] bg-customBlue-light mt-[-34px] xl:mr-[195px] mr-0"></div>
         </div>
 
-        <div className="mt-[60px] pt-20 min-h-[702px] bg-[#F8FBFF]">
+        <div className="mt-[60px] py-20 min-h-[702px] bg-[#F8FBFF] flex">
           <div className="ml-[57px] bg-white max-w-[1270px] min-h-[542px] p-20">
             <img src="assets/landing/mark.png" alt="" />
             <div className="max-w-[1050px] mt-10">
@@ -252,6 +260,22 @@ export default function Landing() {
                   Software & E-commerce Startups
                 </p>
               </div>
+            </div>
+          </div>
+          <div>
+            <div className="ml-20 w-[66px] h-[69px] bg-customBlue-dark pt-[29px]">
+              <img
+                src="assets/landing/up_arrow.png"
+                alt=""
+                className="w-10 h-10 ml-[13px]"
+              />
+            </div>
+            <div className="ml-20 w-[66px] h-[69px] hover:bg-customBlue-dark pt-[29px]">
+              <img
+                src="assets/landing/down_arrow.png"
+                alt=""
+                className="w-10 h-10 ml-[13px]"
+              />
             </div>
           </div>
         </div>

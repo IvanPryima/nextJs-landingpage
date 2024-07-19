@@ -14,18 +14,27 @@ export default function Header() {
         />
       </div>
       <nav className="bg-white hidden sm:flex justify-between items-center gap-16 text-base h-[99px] px-24">
-        <a href="#" className="hover:text-customBlue-dark">
-          Home
-        </a>
-        <a href="#" className="hover:text-customBlue-dark">
-          About
-        </a>
-        <a href="#" className="text-customBlue-dark">
-          MVP
-        </a>
-        <a href="#" className="hover:text-customBlue-dark">
-          Golang Development
-        </a>
+        <div>
+          <a href="#" className="hover:text-customBlue-dark">
+            Home
+          </a>
+        </div>
+        <div>
+          <a href="#" className="hover:text-customBlue-dark">
+            About
+          </a>
+        </div>
+        <div className="flex justify-center">
+          <div className="w-1 h-5 bg-customBlue-dark absolute top-0"></div>
+          <a href="#" className="text-customBlue-dark">
+            MVP
+          </a>
+        </div>
+        <div>
+          <a href="#" className="hover:text-customBlue-dark">
+            Golang Development
+          </a>
+        </div>
       </nav>
 
       <nav className="hidden sm:flex justify-between items-center">
@@ -52,7 +61,10 @@ export default function Header() {
               About
             </a>
             <a href="#" className="hover:text-gray-500">
-              Contact
+              MVP
+            </a>
+            <a href="#" className="hover:text-gray-500">
+              Golang Development
             </a>
           </>
         )}
